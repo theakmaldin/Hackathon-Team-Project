@@ -8,7 +8,7 @@ function App() {
     <>
       {/* <Navbar /> */}
       <ProductContextProvider>
-        <Navbar></Navbar>
+        <Navbar />
         <MainRoutes />
       </ProductContextProvider>
     </>

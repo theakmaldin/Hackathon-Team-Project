@@ -5,13 +5,14 @@ import HomePage from "./Components/HomePage/HomePage";
 import ProductsList from "./Components/Product/ProductList/ProductList";
 // import ProductDetails from "./Components/Products/ProductDetails/ProductDetails";
 import EditProduct from "./Components/Admin/EditProduct/EditProduct";
+import ProductDetails from "./Components/Product/ProductDetails/ProductDetails";
 
 const MainRoutes = () => {
   return (
     <Routes>
-      {/* <Route path="/details/:id" element={<ProductDetails />} /> */}
       <Route path="/edit/:id" element={<EditProduct />} />
       <Route path="/list" element={<ProductsList />} />
+      <Route path="/details/:id" element={<ProductDetails />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/add" element={<AddProduct />} />
     </Routes>
