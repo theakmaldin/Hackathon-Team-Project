@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "category": "sadasdad",
+      "title": "jk",
+      "model": "j",
+      "description": "l",
+      "color": "jk",
+      "price": 111,
+      "img1": "nl",
+      "img2": "nl",
+      "img3": "jkl",
+      "id": 1
+    },
+    {
+      "category": "asdadsada",
+      "title": "sddasdasa",
+      "model": "jijioji",
+      "description": "jijij",
+      "color": "pi",
+      "price": 111,
+      "img1": "jpi",
+      "img2": ";j;j",
+      "img3": "j;",
+      "id": 2
+    },
+    {
+      "category": "asdmk",
+      "title": "mkl",
+      "model": "nkl",
+      "description": "nlk",
+      "color": "nkln",
+      "price": 123,
+      "img1": "lkn",
+      "img2": "ln",
+      "img3": "m;lm;",
+      "id": 3
+    },
+    {
+      "category": "asd",
+      "title": "sadas",
+      "model": "dasd",
+      "description": "asd",
+      "color": "sa1",
+      "price": 12123,
+      "img1": "asdsa",
+      "img2": "sad",
+      "img3": "sadasd",
+      "id": 4
+    }
+  ]
+}
