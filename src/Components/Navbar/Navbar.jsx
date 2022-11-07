@@ -139,7 +139,6 @@ const Navbar = () => {
             }}>
             LOGO
           </Typography>
-
           <Box
             sx={{
               width: "60%",
@@ -152,7 +151,6 @@ const Navbar = () => {
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/details">SALE</NavLink>
           </Box>
-
           <Search sx={{ mr: "35px" }}>
             <SearchIconWrapper>
               <SearchIcon />

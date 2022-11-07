@@ -46,7 +46,28 @@
       "img1": "kl",
       "img2": "nlk",
       "img3": "nl",
+      "category": "T-shirts",
+      "title": "Zara",
+      "model": "XL",
+      "description": "Крутая футболка",
+      "color": "black",
+      "price": 12123,
+      "img1": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
+      "img2": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
+      "img3": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
       "id": 4
+    },
+    {
+      "category": "T-shirt",
+      "title": "Zaraa",
+      "model": "L",
+      "description": "Отличное подходит для любого повода ",
+      "color": "Black",
+      "price": "2500",
+      "img1": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
+      "img2": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
+      "img3": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
+      "id": 5
     }
   ]
 }

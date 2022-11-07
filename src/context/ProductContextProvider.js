@@ -61,10 +61,26 @@ const ProductContextProvider = props => {
     });
   }
 
+  async function deleteProduct(id) {
+    try {
+      await axios.delete(`${API}/${id}`);
+      readProduct();
+      navigate("/list");
+    } catch (error) {
+      return error;
+    }
+  }
+  async function editProduct(id, editedObj) {
+    await axios.patch(`${API}/${id}`, editedObj);
+    readProduct();
+  }
+
   let cloud = {
     addProduct,
     readProduct,
     readOneProduct,
+    deleteProduct,
+    editProduct,
     productsArr: state.product,
     productDetails: state.productDetails,
     pageTotalCount: state.pageTotalCount,
