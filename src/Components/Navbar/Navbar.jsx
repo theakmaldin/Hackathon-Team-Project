@@ -8,12 +8,11 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import SearchIcon from "@mui/icons-material/Search";
-import { alpha, Grid, styled } from "@mui/material";
+import { alpha, styled } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -67,7 +66,6 @@ const Navbar = () => {
     color: "inherit",
     "& .MuiInputBase-input": {
       padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
@@ -108,7 +106,6 @@ const Navbar = () => {
               FABLE
             </span>
           </Typography>
-
           <Box
             sx={{
               flexGrow: 1,
@@ -147,14 +144,13 @@ const Navbar = () => {
               width: "60%",
               display: "flex",
               justifyContent: "space-around",
-              color: "dark",
+              color: "black",
             }}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/list">Product List</NavLink>
             <NavLink to="/add">Add Product</NavLink>
-            <NavLink to="/details">Details</NavLink>
+            <NavLink to="/list">COLLECTIONS</NavLink>
+            <NavLink to="/details">CUSTOMIZER</NavLink>
+            <NavLink to="/details">SALE</NavLink>
           </Box>
-
           <Search sx={{ mr: "35px" }}>
             <SearchIconWrapper>
               <SearchIcon />
@@ -164,7 +160,6 @@ const Navbar = () => {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
