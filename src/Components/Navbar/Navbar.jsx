@@ -146,7 +146,7 @@ const Navbar = () => {
               justifyContent: "space-around",
               color: "black",
             }}>
-            <NavLink to="/add">Add Product</NavLink>
+            <NavLink to="/add">ADD PRODUCT</NavLink>
             <NavLink to="/list">COLLECTIONS</NavLink>
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/details">SALE</NavLink>
