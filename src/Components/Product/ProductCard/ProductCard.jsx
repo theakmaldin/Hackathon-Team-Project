@@ -17,35 +17,31 @@ import { Link, useNavigate } from "react-router-dom";
 const ProductCard = ({ obj }) => {
   let navigate = useNavigate();
   return (
-    <Card sx={{ maxWidth: 300 }}>
+    <Card sx={{ maxWidth: 347 }}>
+      <Link to={`/details/${obj.id}`}>
+        <CardMedia
+          className="cardMedia"
+          component="img"
+          height="auto"
+          image={obj.img1}
+          alt={obj.title}
+        />
+      </Link>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: blue[500] }} aria-label="recipe">
-            {obj.category[0].toUpperCase()}
-          </Avatar>
-        }
-        action={
-          <Link to={`/details/${obj.id}`}>
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          </Link>
-        }
+        sx={{ paddingBottom: "0", paddingLeft: "0", paddingRight: "0" }}
+        className="cardHeader"
         title={obj.title}
-        subheader={obj.model}
-      />
-      <CardMedia
-        component="img"
-        height="280"
-        image={obj.img1}
-        alt={obj.title}
-      />
-      <CardContent>
+        subheader={obj.price}></CardHeader>
+
+      {/* <CardContent>
         <Typography variant="body2" color="text.secondary" className="cardText">
           {obj.description}
         </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
+      </CardContent> */}
+
+      <CardActions
+        disableSpacing
+        sx={{ display: "flex", justifyContent: "space-between" }}>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
