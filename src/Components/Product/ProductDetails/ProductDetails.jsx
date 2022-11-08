@@ -144,7 +144,6 @@ const ProductDetails = () => {
                   }}
                   sx={{ marginLeft: "20px", marginTop: "32px" }}
                   onClick={() => addProductToBasket(productDetails)}>
-                  >
                   <Grid
                     style={{
                       fontFamily: "Roboto,Arial,sans-serif",
