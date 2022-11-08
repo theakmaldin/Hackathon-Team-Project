@@ -10,7 +10,6 @@ import "./ProductDetails.css";
 import SwiperCore, { Scrollbar, Thumbs } from "swiper";
 import { Autoplay } from "swiper";
 import { basketContext } from "../../../context/BasketProductProvider";
-import { width } from "@mui/system";
 
 SwiperCore.use([Thumbs]);
 
@@ -114,6 +113,23 @@ const ProductDetails = () => {
                   </Grid>
                 </Grid>
               </Box>
+
+              <Grid
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  paddingLeft: "3%",
+                  paddingTop: "2%",
+                }}>
+                <img
+                  width="5%"
+                  src="https://thumb.tildacdn.com/tild3165-3861-4435-b866-393638646664/-/format/webp/Screenshot_2021-02-1.png"
+                  alt=""
+                />
+                <a href="#">
+                  <p>Size table</p>
+                </a>
+              </Grid>
 
               <Grid>
                 <Button
