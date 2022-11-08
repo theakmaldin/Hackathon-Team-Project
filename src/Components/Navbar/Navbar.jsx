@@ -11,16 +11,19 @@ import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import SearchIcon from "@mui/icons-material/Search";
 import { alpha, styled } from "@mui/material";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Badge from "@mui/material/Badge";
 import InputBase from "@mui/material/InputBase";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 import LiveSearch from "../LiveSearch/LiveSearch";
+import { basketContext } from "../../context/BasketProductProvider";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
+  const { basketCount } = React.useContext(basketContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -152,21 +155,15 @@ const Navbar = () => {
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/details">SALE</NavLink>
           </Box>
-          <LiveSearch
-            sx={{ mr: "35px", backgroundColor: "black" }}
-            placeholder="Search…"
-            inputProps={{ "aria-label": "search" }}
-          />
 
-          {/* <Search sx={{ mr: "35px" }}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search> */}
+          <Search sx={{ mr: "35px" }}>
+            <LiveSearch />
+          </Search>
+          <Link to="/basket">
+            <Badge badgeContent={basketCount} color="error">
+              <AddShoppingCartIcon />
+            </Badge>
+          </Link>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
