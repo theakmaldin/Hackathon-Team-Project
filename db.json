@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "category": "Category ",
+      "category": "shirt",
       "title": "Title",
       "model": "Model",
       "description": "Description ",
@@ -13,7 +13,7 @@
       "id": 1
     },
     {
-      "category": "Category ",
+      "category": "Jacket",
       "title": "JAСKET KLS",
       "model": "1000",
       "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
@@ -25,7 +25,7 @@
       "id": 2
     },
     {
-      "category": "Category ",
+      "category": "T-shirt",
       "title": "Title",
       "model": "Model",
       "description": "Description ",
@@ -35,18 +35,6 @@
       "img2": "https://static.tildacdn.com/tild3533-6635-4831-a364-613636613932/IMG_3835.jpg",
       "img3": "https://static.tildacdn.com/tild3238-6561-4662-b930-376430373563/IMG_3836.jpg",
       "id": 3
-    },
-    {
-      "category": "T-shirt",
-      "title": "Zaraa",
-      "model": "L",
-      "description": "Отличное подходит для любого повода ",
-      "color": "Black",
-      "price": "2500",
-      "img1": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
-      "img2": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
-      "img3": "https://cdn.themostexpensive.org/wp-content/uploads/2022/06/Superlative-Luxury-The-Most-Expensive-Shirt-in-the-World.jpg",
-      "id": 5
     }
   ]
 }

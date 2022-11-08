@@ -1,7 +1,7 @@
 import React from "react";
 // import Navbar from "../Navbar/Navbar";
 import "./HomePage.css";
-import people from "./Img/people.png";
+import people from "./img/people.png";
 
 const HomePage = () => {
   return (

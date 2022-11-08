@@ -16,6 +16,7 @@ import { alpha, styled } from "@mui/material";
 import InputBase from "@mui/material/InputBase";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import LiveSearch from "../LiveSearch/LiveSearch";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -151,7 +152,13 @@ const Navbar = () => {
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/details">SALE</NavLink>
           </Box>
-          <Search sx={{ mr: "35px" }}>
+          <LiveSearch
+            sx={{ mr: "35px", backgroundColor: "black" }}
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
+
+          {/* <Search sx={{ mr: "35px" }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -159,7 +166,7 @@ const Navbar = () => {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
-          </Search>
+          </Search> */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
