@@ -127,7 +127,7 @@ const ProductDetails = () => {
                   alt=""
                 />
                 <a href="#">
-                  <p>Size table</p>
+                  <p>Size Table</p>
                 </a>
               </Grid>
 
