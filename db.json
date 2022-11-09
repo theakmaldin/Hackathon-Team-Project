@@ -1,129 +1,91 @@
 {
   "products": [
     {
-      "category": "Пиджак",
-      "title": "ПИДЖАК KLS DARK GREEN",
+      "category": "shirt",
+      "title": "Title",
       "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего сло - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "GREEN",
-      "price": 120,
-      "img1": "https://static.tildacdn.com/tild6634-6263-4665-a139-316532373139/IMG_5137.jpg",
-      "img2": "https://static.tildacdn.com/tild3230-6263-4733-a332-383933663037/IMG_5144-1.jpg",
-      "img3": "https://static.tildacdn.com/tild3064-3266-4338-b864-663831366563/IMG_5147-1.jpg",
+      "description": "Description ",
+      "color": "Color",
+      "price": 150,
+      "img1": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img2": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img3": "https://static.tildacdn.com/tild3638-6139-4965-b765-306564636233/DSC09662.jpg",
       "id": 1
     },
     {
-
-      "category": "Category ",
-      "title": "ПИДЖАК KLS YELLOW",
+      "category": "shirt",
+      "title": "Title",
       "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "YELLOW",
-      "price": 230,
-      "img1": "https://static.tildacdn.com/tild6164-3162-4533-b736-333763336337/IMG_5391.jpg",
-      "img2": "https://static.tildacdn.com/tild3737-3931-4566-a636-336365633062/IMG_5404.jpg",
-      "img3": "https://static.tildacdn.com/tild3364-6332-4033-b862-633666616237/IMG_5406.jpg",
+      "description": "Description ",
+      "color": "Color",
+      "price": 250,
+      "img1": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img2": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img3": "https://static.tildacdn.com/tild3638-6139-4965-b765-306564636233/DSC09662.jpg",
+      "id": 1
+    },
+    {
       "category": "Jacket",
       "title": "JAСKET KLS",
       "model": "1000",
       "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
       "color": "Color",
-      "price": 120,
+      "price": 220,
       "img1": "https://static.tildacdn.com/tild6535-6364-4139-b866-653530616365/1.jpg",
       "img2": "https://static.tildacdn.com/tild3835-3265-4263-b931-356434306564/2.jpg",
       "img3": "https://static.tildacdn.com/tild6534-6434-4639-b333-306362326637/3.jpg",
       "id": 2
     },
     {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS TERRACOTTA",
+      "category": "T-shirt",
+      "title": "Title",
       "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "TERRACOTTA",
-      "price": 490,
-      "img1": "https://static.tildacdn.com/tild3766-3831-4165-b932-363639313632/1.jpg",
-      "img2": "https://static.tildacdn.com/tild6435-3233-4935-a333-363438376133/2.jpg",
-      "img3": "https://static.tildacdn.com/tild3333-6133-4163-b864-393638653536/4.jpg",
-
       "description": "Description ",
       "color": "Color",
-      "price": 150,
+      "price": 250,
       "img1": "https://static.tildacdn.com/tild6532-6535-4963-b338-653462323336/IMG_3834.jpg",
       "img2": "https://static.tildacdn.com/tild3533-6635-4831-a364-613636613932/IMG_3835.jpg",
       "img3": "https://static.tildacdn.com/tild3238-6561-4662-b930-376430373563/IMG_3836.jpg",
       "id": 3
     },
     {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS GRAPHITE",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "GRAPHITE",
-      "price": 320,
-      "img1": "https://static.tildacdn.com/tild6535-6364-4139-b866-653530616365/1.jpg",
-      "img2": "https://static.tildacdn.com/tild3633-3733-4165-b066-373964306335/2.jpg",
-      "img3": "https://static.tildacdn.com/tild3039-3539-4434-b763-343133353036/4.jpg",
+      "category": "2цке",
+      "title": "23",
+      "model": "23",
+      "description": "23",
+      "color": "32",
+      "price": 23,
+      "img1": "23",
+      "img2": "23",
+      "img3": "23",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "name": "Arlen",
+      "comment": "Сайт очень крутой мне понравились вещи",
+      "id": 1
+    },
+    {
+      "name": "Мирдин",
+      "comment": "Сайт не много не доделали, а так вообщем круто",
+      "id": 2
+    },
+    {
+      "name": "фыва",
+      "comment": "фыв",
+      "id": 3
+    },
+    {
+      "name": "ыфв",
+      "comment": "ыфв",
       "id": 4
     },
     {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS BLUE",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "BLUE",
-      "price": 290,
-      "img1": "https://static.tildacdn.com/tild3463-3536-4039-b762-343362616435/1.jpg",
-      "img2": "https://static.tildacdn.com/tild3135-3033-4165-a337-386432336237/2.jpg",
-      "img3": "https://static.tildacdn.com/tild3738-6339-4663-b638-316665656165/4.jpg",
+      "name": "цываыва",
+      "comment": "ыфв",
       "id": 5
-    },
-    {
-      "category": "Category ",
-      "title": "ПИДЖАК KLASSIK GREY",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "GREY",
-      "price": 499,
-      "img1": "https://static.tildacdn.com/tild3435-3837-4566-b239-306461316562/1.jpg",
-      "img2": "https://static.tildacdn.com/tild3631-6661-4931-a135-616665393430/2.jpg",
-      "img3": "https://static.tildacdn.com/tild3931-6136-4031-a162-653130623135/4.jpg",
-      "id": 6
-    },
-    {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS BEIGE",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "BEIGE",
-      "price": 300,
-      "img1": "https://static.tildacdn.com/tild3762-3036-4834-b438-383734396234/IMG_5137_1.jpg",
-      "img2": "https://static.tildacdn.com/tild6362-6262-4136-a633-396432613934/IMG_5404-1.jpg",
-      "img3": "https://static.tildacdn.com/tild3233-6339-4330-b937-613435373231/IMG_5147-1.jpg",
-      "id": 7
-    },
-    {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS LIGHT GREEN",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "GREEN",
-      "price": 410,
-      "img1": "https://static.tildacdn.com/tild6438-6165-4738-b565-396234613134/1.jpg",
-      "img2": "https://static.tildacdn.com/tild6537-3165-4235-b031-656239346434/3.jpg",
-      "img3": "https://static.tildacdn.com/tild6537-3165-4235-b031-656239346434/3.jpg",
-      "id": 8
-    },
-    {
-      "category": "Category ",
-      "title": "ПИДЖАК KLS BLACK",
-      "model": "Model",
-      "description": "– Свободный крой делает изделие универсальным элементом верхнего слоя - Два накладных и один потайной карманы – Фирменная подкладка с паттерном FABLE – Подплечники средней жесткости для придания формы",
-      "color": "BLACK",
-      "price": 100,
-      "img1": "https://static.tildacdn.com/tild3432-3831-4437-a631-643065353263/1.jpg",
-      "img2": "https://static.tildacdn.com/tild3138-6537-4736-b135-663765336165/2.jpg",
-      "img3": "https://static.tildacdn.com/tild3462-6235-4162-a665-663734613964/4.jpg",
-      "id": 9
     }
   ]
 }
