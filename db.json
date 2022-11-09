@@ -13,12 +13,24 @@
       "id": 1
     },
     {
+      "category": "shirt",
+      "title": "Title",
+      "model": "Model",
+      "description": "Description ",
+      "color": "Color",
+      "price": 250,
+      "img1": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img2": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
+      "img3": "https://static.tildacdn.com/tild3638-6139-4965-b765-306564636233/DSC09662.jpg",
+      "id": 1
+    },
+    {
       "category": "Jacket",
       "title": "JAСKET KLS",
       "model": "1000",
       "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
       "color": "Color",
-      "price": 120,
+      "price": 220,
       "img1": "https://static.tildacdn.com/tild6535-6364-4139-b866-653530616365/1.jpg",
       "img2": "https://static.tildacdn.com/tild3835-3265-4263-b931-356434306564/2.jpg",
       "img3": "https://static.tildacdn.com/tild6534-6434-4639-b333-306362326637/3.jpg",
@@ -30,11 +42,50 @@
       "model": "Model",
       "description": "Description ",
       "color": "Color",
-      "price": 150,
+      "price": 250,
       "img1": "https://static.tildacdn.com/tild6532-6535-4963-b338-653462323336/IMG_3834.jpg",
       "img2": "https://static.tildacdn.com/tild3533-6635-4831-a364-613636613932/IMG_3835.jpg",
       "img3": "https://static.tildacdn.com/tild3238-6561-4662-b930-376430373563/IMG_3836.jpg",
       "id": 3
+    },
+    {
+      "category": "2цке",
+      "title": "23",
+      "model": "23",
+      "description": "23",
+      "color": "32",
+      "price": 23,
+      "img1": "23",
+      "img2": "23",
+      "img3": "23",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "name": "Arlen",
+      "comment": "Сайт очень крутой мне понравились вещи",
+      "id": 1
+    },
+    {
+      "name": "Мирдин",
+      "comment": "Сайт не много не доделали, а так вообщем круто",
+      "id": 2
+    },
+    {
+      "name": "фыва",
+      "comment": "фыв",
+      "id": 3
+    },
+    {
+      "name": "ыфв",
+      "comment": "ыфв",
+      "id": 4
+    },
+    {
+      "name": "цываыва",
+      "comment": "ыфв",
+      "id": 5
     }
   ]
 }

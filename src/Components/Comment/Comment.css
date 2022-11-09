@@ -1,0 +1,28 @@
+.block {
+  display: flex;
+  flex-direction: column;
+
+  border: solid rgb(84, 84, 224) 0.5px;
+  text-align: center;
+  margin-top: 5px;
+  width: 50%;
+  align-items: center;
+}
+
+h3 {
+  justify-content: center;
+  margin-top: 10px;
+}
+p {
+  margin-top: 10px;
+}
+button {
+  display: none;
+}
+
+#otziv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -153,7 +153,7 @@ const Navbar = () => {
             <NavLink to="/add">ADD PRODUCT</NavLink>
             <NavLink to="/list">COLLECTIONS</NavLink>
             <NavLink to="/details">CUSTOMIZER</NavLink>
-            <NavLink to="/details">SALE</NavLink>
+            <NavLink to="/comment">REVIEWS</NavLink>
           </Box>
 
           <Search sx={{ mr: "35px" }}>

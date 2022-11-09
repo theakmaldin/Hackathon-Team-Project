@@ -5,11 +5,12 @@ import { useLocation, useNavigate } from "react-router-dom";
 export const productContext = createContext();
 
 const API = "http://localhost:8000/products";
-
+const API2 = "http://localhost:8000/comments";
 const INIT_STATE = {
   products: null,
   productDetails: null,
   pageTotalCount: 1,
+  comments: null,
 };
 
 function reducer(prevState, action) {
@@ -22,6 +23,8 @@ function reducer(prevState, action) {
       };
     case "GET_ONE_PRODUCT":
       return { ...prevState, productDetails: action.payload };
+    case "GET_COMMENTS":
+      return { ...prevState, comments: action.payload };
     default:
       return prevState;
   }
@@ -34,6 +37,14 @@ const ProductContextProvider = props => {
   const navigate = useNavigate();
 
   // ! ====== Create =======
+  async function addComments(newComment) {
+    try {
+      await axios.post(API2, newComment);
+    } catch (error) {
+      return error;
+    }
+    readComments();
+  }
 
   async function addProduct(newProduct) {
     try {
@@ -41,9 +52,18 @@ const ProductContextProvider = props => {
     } catch (error) {
       return error;
     }
+    readProduct();
   }
 
   // ! ====== READ ======
+  async function readComments() {
+    const { data } = await axios(API2);
+    console.log(data);
+    dispatch({
+      type: "GET_COMMENTS",
+      payload: data,
+    });
+  }
 
   async function readProduct() {
     const res = await axios(`${API}${location.search}`);
@@ -81,9 +101,12 @@ const ProductContextProvider = props => {
     readOneProduct,
     deleteProduct,
     editProduct,
+    readComments,
+    addComments,
     productsArr: state.product,
     productDetails: state.productDetails,
     pageTotalCount: state.pageTotalCount,
+    comments: state.comments,
   };
   return (
     <productContext.Provider value={cloud}>
