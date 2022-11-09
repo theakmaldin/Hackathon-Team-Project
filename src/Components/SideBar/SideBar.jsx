@@ -80,7 +80,7 @@ export default function SideBar({
         open={open}>
         <DrawerHeader>
           <Grid sx={{ width: "50%" }}>
-            <Typography variant="h4">Filter</Typography>
+            <Typography variant="h4">Filter1</Typography>
           </Grid>
 
           <IconButton onClick={handleDrawerClose}>
