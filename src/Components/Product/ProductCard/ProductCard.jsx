@@ -17,7 +17,7 @@ import { Link, useNavigate } from "react-router-dom";
 const ProductCard = ({ obj }) => {
   let navigate = useNavigate();
   return (
-    <Card sx={{ maxWidth: 347 }}>
+    <Card sx={{ maxWidth: 347, marginLeft: "20%" }}>
       <Link to={`/details/${obj.id}`}>
         <CardMedia
           className="cardMedia"
