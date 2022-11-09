@@ -11,6 +11,14 @@ import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import SearchIcon from "@mui/icons-material/Search";
+import { alpha, Badge, Button, FormControl, styled } from "@mui/material";
+import InputBase from "@mui/material/InputBase";
+import { Form, Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
+import LiveSearch from "../LiveSearch/LiveSearch";
+import { AccountCircle } from "@mui/icons-material";
+import { authContext } from "../../context/AuthContexProvider";
 import { alpha, styled } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Badge from "@mui/material/Badge";
@@ -25,10 +33,17 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const Navbar = () => {
   const { basketCount } = React.useContext(basketContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const { user, handleLogOut } = React.useContext(authContext);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  const menuId = "primary-search-account-menu";
 
-  const handleOpenNavMenu = event => {
-    setAnchorElNav(event.currentTarget);
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleProfileMenuOpen = event => {
+    setAnchorEl(event.currentTarget);
   };
   const handleOpenUserMenu = event => {
     setAnchorElUser(event.currentTarget);
@@ -86,45 +101,6 @@ const Navbar = () => {
     <AppBar position="static" sx={{ bgcolor: "white" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { md: "flex" },
-              width: 120,
-              height: 80,
-            }}>
-            <span
-              style={{
-                display: "flex",
-                alignItems: "center",
-                color: "black",
-                fontSize: "18px",
-                letterSpacing: "15px",
-                fontWeight: "bold",
-                width: "30%",
-              }}>
-              FABLE
-            </span>
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", justifyContent: "space-evenly" },
-            }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit">
-              <MenuIcon />
-            </IconButton>
-          </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -150,11 +126,31 @@ const Navbar = () => {
               justifyContent: "space-around",
               color: "black",
             }}>
+            <p
+              style={{
+                color: "black",
+                fontSize: "18px",
+                letterSpacing: "15px",
+                fontWeight: "bold",
+              }}>
+              <Link to="/">FABLE</Link>
+            </p>
             <NavLink to="/add">ADD PRODUCT</NavLink>
-            <NavLink to="/list">COLLECTIONS</NavLink>
+            <NavLink to="list">COLLECTIONS</NavLink>
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/comment">REVIEWS</NavLink>
           </Box>
+          
+          <Search sx={{ mr: "35px" }}>
+            <LiveSearch />
+          </Search>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "end",
+              alignItems: "center",
+              paddingRight: "20px",
+            }}>
 
           <Search sx={{ mr: "35px" }}>
             <LiveSearch />
@@ -171,7 +167,7 @@ const Navbar = () => {
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: "45px" }}
+              style={{ marginTop: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -185,12 +181,26 @@ const Navbar = () => {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}>
-              {settings.map(setting => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <Link to="/auth">Registration</Link>
+              <Button onClick={handleLogOut} sx={{ color: "black" }}>
+                LogOut
+              </Button>
             </Menu>
+            <Box
+              style={{
+                display: "flex",
+                justifyContent: "end",
+                alignItems: "center",
+              }}>
+              <Link
+                to="/"
+                style={{
+                  paddingRight: "20px",
+                  paddingLeft: "20px",
+                }}>
+                {user.email ? user.email : user.email}
+              </Link>
+            </Box>
           </Box>
         </Toolbar>
       </Container>
