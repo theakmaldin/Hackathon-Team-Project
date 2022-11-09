@@ -19,10 +19,19 @@ import "./Navbar.css";
 import LiveSearch from "../LiveSearch/LiveSearch";
 import { AccountCircle } from "@mui/icons-material";
 import { authContext } from "../../context/AuthContexProvider";
+import { alpha, styled } from "@mui/material";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Badge from "@mui/material/Badge";
+import InputBase from "@mui/material/InputBase";
+import { NavLink, Link } from "react-router-dom";
+import "./Navbar.css";
+import LiveSearch from "../LiveSearch/LiveSearch";
+import { basketContext } from "../../context/BasketProductProvider";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
+  const { basketCount } = React.useContext(basketContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -132,7 +141,7 @@ const Navbar = () => {
               <NavLink to="/add">ADD PRODUCT</NavLink>
               <NavLink to="list">COLLECTIONS</NavLink>
               <NavLink to="/details">CUSTOMIZER</NavLink>
-              <NavLink to="/details">SALE</NavLink>
+              <NavLink to="/comment">REVIEWS</NavLink>
             </div>
           </Box>
           <Search className="searchNavbar" sx={{ mr: "35px" }}>
