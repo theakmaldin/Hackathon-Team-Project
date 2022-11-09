@@ -18,7 +18,7 @@ const ProductDetails = () => {
   const { readOneProduct, productDetails, deleteProduct } =
     useContext(productContext);
 
-  // const { addProductToBasket } = useContext(basketContext);
+  const { addProductToBasket } = useContext(basketContext);
   const { id } = useParams();
 
   useEffect(() => {
@@ -143,8 +143,7 @@ const ProductDetails = () => {
                     opacity: " 0.5",
                   }}
                   sx={{ marginLeft: "20px", marginTop: "32px" }}
-                  // onClick={() => addProductToBasket(productDetails)}>
-                >
+                  onClick={() => addProductToBasket(productDetails)}>
                   <Grid
                     style={{
                       fontFamily: "Roboto,Arial,sans-serif",

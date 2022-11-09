@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import AuthContextProvider from "./context/AuthContexProvider";
+import BasketContextProvider from "./context/BasketProductProvider";
 import ProductContextProvider from "./context/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
 
@@ -13,6 +14,13 @@ function App() {
         <MainRoutes />
       </ProductContextProvider>
     </AuthContextProvider>
+      <BasketContextProvider>
+        <ProductContextProvider>
+          <Navbar />
+          <MainRoutes />
+        </ProductContextProvider>
+      </BasketContextProvider>
+    </>
   );
 }
 

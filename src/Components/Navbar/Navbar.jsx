@@ -19,10 +19,19 @@ import "./Navbar.css";
 import LiveSearch from "../LiveSearch/LiveSearch";
 import { AccountCircle } from "@mui/icons-material";
 import { authContext } from "../../context/AuthContexProvider";
+import { alpha, styled } from "@mui/material";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import Badge from "@mui/material/Badge";
+import InputBase from "@mui/material/InputBase";
+import { NavLink, Link } from "react-router-dom";
+import "./Navbar.css";
+import LiveSearch from "../LiveSearch/LiveSearch";
+import { basketContext } from "../../context/BasketProductProvider";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
+  const { basketCount } = React.useContext(basketContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -131,6 +140,7 @@ const Navbar = () => {
             <NavLink to="/details">CUSTOMIZER</NavLink>
             <NavLink to="/details">SALE</NavLink>
           </Box>
+          
           <Search sx={{ mr: "35px" }}>
             <LiveSearch />
           </Search>
@@ -141,6 +151,16 @@ const Navbar = () => {
               alignItems: "center",
               paddingRight: "20px",
             }}>
+
+          <Search sx={{ mr: "35px" }}>
+            <LiveSearch />
+          </Search>
+          <Link to="/basket">
+            <Badge badgeContent={basketCount} color="error">
+              <AddShoppingCartIcon />
+            </Badge>
+          </Link>
+          <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />

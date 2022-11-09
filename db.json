@@ -13,6 +13,7 @@
       "id": 1
     },
     {
+
       "category": "Category ",
       "title": "ПИДЖАК KLS YELLOW",
       "model": "Model",
@@ -22,6 +23,15 @@
       "img1": "https://static.tildacdn.com/tild6164-3162-4533-b736-333763336337/IMG_5391.jpg",
       "img2": "https://static.tildacdn.com/tild3737-3931-4566-a636-336365633062/IMG_5404.jpg",
       "img3": "https://static.tildacdn.com/tild3364-6332-4033-b862-633666616237/IMG_5406.jpg",
+      "category": "Jacket",
+      "title": "JAСKET KLS",
+      "model": "1000",
+      "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
+      "color": "Color",
+      "price": 120,
+      "img1": "https://static.tildacdn.com/tild6535-6364-4139-b866-653530616365/1.jpg",
+      "img2": "https://static.tildacdn.com/tild3835-3265-4263-b931-356434306564/2.jpg",
+      "img3": "https://static.tildacdn.com/tild6534-6434-4639-b333-306362326637/3.jpg",
       "id": 2
     },
     {
@@ -34,6 +44,13 @@
       "img1": "https://static.tildacdn.com/tild3766-3831-4165-b932-363639313632/1.jpg",
       "img2": "https://static.tildacdn.com/tild6435-3233-4935-a333-363438376133/2.jpg",
       "img3": "https://static.tildacdn.com/tild3333-6133-4163-b864-393638653536/4.jpg",
+
+      "description": "Description ",
+      "color": "Color",
+      "price": 150,
+      "img1": "https://static.tildacdn.com/tild6532-6535-4963-b338-653462323336/IMG_3834.jpg",
+      "img2": "https://static.tildacdn.com/tild3533-6635-4831-a364-613636613932/IMG_3835.jpg",
+      "img3": "https://static.tildacdn.com/tild3238-6561-4662-b930-376430373563/IMG_3836.jpg",
       "id": 3
     },
     {
