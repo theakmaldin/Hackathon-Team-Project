@@ -133,34 +133,28 @@ const Navbar = () => {
                 letterSpacing: "15px",
                 fontWeight: "bold",
               }}>
-              <Link to="/">FABLE</Link>
+              <Link className="linkFabel" to="/">
+                FABLE
+              </Link>
             </p>
-            <NavLink to="/add">ADD PRODUCT</NavLink>
-            <NavLink to="list">COLLECTIONS</NavLink>
-            <NavLink to="/details">CUSTOMIZER</NavLink>
-            <NavLink to="/comment">REVIEWS</NavLink>
+            <div className="burger">
+              <NavLink to="/add">ADD PRODUCT</NavLink>
+              <NavLink to="list">COLLECTIONS</NavLink>
+              <NavLink to="/details">CUSTOMIZER</NavLink>
+              <NavLink to="/comment">REVIEWS</NavLink>
+            </div>
           </Box>
-          
-          <Search sx={{ mr: "35px" }}>
+          <Search className="searchNavbar" sx={{ mr: "35px" }}>
             <LiveSearch />
           </Search>
           <Box
+            className="boxAvatar"
             sx={{
               display: "flex",
               justifyContent: "end",
               alignItems: "center",
               paddingRight: "20px",
             }}>
-
-          <Search sx={{ mr: "35px" }}>
-            <LiveSearch />
-          </Search>
-          <Link to="/basket">
-            <Badge badgeContent={basketCount} color="error">
-              <AddShoppingCartIcon />
-            </Badge>
-          </Link>
-          <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
