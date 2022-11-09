@@ -124,17 +124,22 @@ const Navbar = () => {
                 letterSpacing: "15px",
                 fontWeight: "bold",
               }}>
-              <Link to="/">FABLE</Link>
+              <Link className="linkFabel" to="/">
+                FABLE
+              </Link>
             </p>
-            <NavLink to="/add">ADD PRODUCT</NavLink>
-            <NavLink to="list">COLLECTIONS</NavLink>
-            <NavLink to="/details">CUSTOMIZER</NavLink>
-            <NavLink to="/details">SALE</NavLink>
+            <div className="burger">
+              <NavLink to="/add">ADD PRODUCT</NavLink>
+              <NavLink to="list">COLLECTIONS</NavLink>
+              <NavLink to="/details">CUSTOMIZER</NavLink>
+              <NavLink to="/details">SALE</NavLink>
+            </div>
           </Box>
-          <Search sx={{ mr: "35px" }}>
+          <Search className="searchNavbar" sx={{ mr: "35px" }}>
             <LiveSearch />
           </Search>
           <Box
+            className="boxAvatar"
             sx={{
               display: "flex",
               justifyContent: "end",

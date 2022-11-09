@@ -79,6 +79,10 @@ export default function SideBar({
         anchor="left"
         open={open}>
         <DrawerHeader>
+          <Grid sx={{ width: "50%" }}>
+            <Typography variant="h4">Filter</Typography>
+          </Grid>
+
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -95,10 +99,6 @@ export default function SideBar({
           price={price}
           setPrice={setPrice}
         />
-
-        <Grid sx={{ width: "40%" }} ml="40px" my="20px">
-          <Typography variant="h4">Filter</Typography>
-        </Grid>
 
         <Divider />
       </Drawer>

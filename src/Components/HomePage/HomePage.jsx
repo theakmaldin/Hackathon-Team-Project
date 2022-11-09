@@ -11,12 +11,13 @@ const HomePage = () => {
       <div className="container-HomePage">
         <div className="content-Homepage">
           <p>FABLE</p>
-
           <p>
             Moscow clothing brand that doesn't limit itself to the framework of
             any concepts
           </p>
-          <img src={people} alt="people" />
+          <p className="imgHomePage">
+            <img src={people} alt="people" />
+          </p>
         </div>
       </div>
     </>

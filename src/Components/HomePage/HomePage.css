@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-.content-Homepage {
+.content-Homepage p {
+  width: 100%;
   text-align: center;
 }
 .content-Homepage :first-child {
@@ -22,8 +23,10 @@
   line-height: 135%;
   color: rgba(60, 55, 55, 0.8);
 }
-.content-Homepage :nth-child(3) {
-  margin-top: 4%;
-  width: 95%;
-  height: 479px;
+
+.imgHomePage img {
+  width: 100%;
+}
+
+@media all and (max-width: 390px) {
 }
