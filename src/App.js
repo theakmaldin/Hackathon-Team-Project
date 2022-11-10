@@ -9,12 +9,6 @@ import MainRoutes from "./MainRoutes";
 function App() {
   return (
     <AuthContextProvider>
-      {/* <Navbar /> */}
-      <ProductContextProvider>
-        <Navbar />
-        <MainRoutes />
-      </ProductContextProvider>
-    </AuthContextProvider>
       <BasketContextProvider>
         <ProductContextProvider>
           <Navbar />
@@ -22,7 +16,7 @@ function App() {
           <Footer />
         </ProductContextProvider>
       </BasketContextProvider>
-    </>
+    </AuthContextProvider>
   );
 }
 
