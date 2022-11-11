@@ -1,4 +1,4 @@
-import * as React from "react";
+ jimport * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -24,7 +24,7 @@ function Copyright(props) {
       {...props}>
       {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Your Website1
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}

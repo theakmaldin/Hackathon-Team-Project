@@ -34,8 +34,8 @@ const Comment = () => {
           ? comments.map(item => (
               <>
                 <div className="block">
-                  <h3>{item.name}</h3>
-                  <p>{item.comment}</p>
+                  <h3 id="h3-standart">{item.name}</h3>
+                  <p id="p-standart">{item.comment}</p>
                 </div>
               </>
             ))
