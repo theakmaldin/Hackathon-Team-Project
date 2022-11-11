@@ -1,64 +1,52 @@
 {
   "products": [
     {
-      "category": "shirt",
-      "title": "Title",
-      "model": "Model",
-      "description": "Description ",
-      "color": "Color",
-      "price": 150,
-      "img1": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
-      "img2": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
-      "img3": "https://static.tildacdn.com/tild3638-6139-4965-b765-306564636233/DSC09662.jpg",
-      "id": 1
-    },
-    {
-      "category": "shirt",
-      "title": "Title",
-      "model": "Model",
-      "description": "Description ",
-      "color": "Color",
-      "price": 250,
-      "img1": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
-      "img2": "https://static.tildacdn.com/tild3634-3438-4836-b237-363366306635/DSC09646.jpg",
-      "img3": "https://static.tildacdn.com/tild3638-6139-4965-b765-306564636233/DSC09662.jpg",
-      "id": 1
-    },
-    {
-      "category": "Jacket",
-      "title": "JAСKET KLS",
-      "model": "1000",
-      "description": "Jacket made of a loose fit makes the product a universal element of the upper layer. Two patch pockets and one hidden pocket. Branded lining with FABLE pattern. Shoulder pads of medium rigidity for shaping.",
-      "color": "Color",
-      "price": 220,
-      "img1": "https://static.tildacdn.com/tild6535-6364-4139-b866-653530616365/1.jpg",
-      "img2": "https://static.tildacdn.com/tild3835-3265-4263-b931-356434306564/2.jpg",
-      "img3": "https://static.tildacdn.com/tild6534-6434-4639-b333-306362326637/3.jpg",
+      "category": "Футболка",
+      "title": "ФУТБОЛКА CLR Black",
+      "model": "Mod",
+      "description": "Best t-short",
+      "color": "Blue",
+      "price": "300",
+      "img1": "https://static.tildacdn.com/tild3437-3931-4334-a130-303733393439/Group_5.jpg",
+      "img2": "https://static.tildacdn.com/tild6263-3635-4034-b433-616138326139/IMG_3661.jpg",
+      "img3": "https://static.tildacdn.com/ti6361-6634-4561-b137-623965343764/IMG_3662.jpg",
       "id": 2
     },
     {
-      "category": "T-shirt",
-      "title": "Title",
+      "category": "Худи",
+      "title": "ХУДИ CLR black",
       "model": "Model",
-      "description": "Description ",
-      "color": "Color",
-      "price": 250,
-      "img1": "https://static.tildacdn.com/tild6532-6535-4963-b338-653462323336/IMG_3834.jpg",
-      "img2": "https://static.tildacdn.com/tild3533-6635-4831-a364-613636613932/IMG_3835.jpg",
-      "img3": "https://static.tildacdn.com/tild3238-6561-4662-b930-376430373563/IMG_3836.jpg",
+      "description": "Best Azret",
+      "color": "ORANGE",
+      "price": "200",
+      "img1": "https://static.tildacdn.com/tild3935-3634-4437-b335-343831393139/_.jpg",
+      "img2": "https://static.tildacdn.com/tild6636-6630-4633-b431-626636303566/IMG_6407.jpg",
+      "img3": "https://static.tildacdn.com/tild3736-6262-4866-b533-306562663766/IMG_6415.jpg",
       "id": 3
     },
     {
-      "category": "2цке",
-      "title": "23",
-      "model": "23",
-      "description": "23",
-      "color": "32",
-      "price": 23,
-      "img1": "23",
-      "img2": "23",
-      "img3": "23",
+      "category": "Свитшот",
+      "title": "СВИТШОТ CLR WHITE",
+      "model": "Model",
+      "description": "Best Azret",
+      "color": "white",
+      "price": 50,
+      "img1": "https://static.tildacdn.com/tild3661-3630-4633-a131-653163386135/_-2.jpg",
+      "img2": "https://static.tildacdn.com/tild6466-3064-4633-b362-633231633236/IMG_3788.jpg",
+      "img3": "https://static.tildacdn.com/tild3432-3566-4361-b536-616232383834/IMG_3789.jpg",
       "id": 4
+    },
+    {
+      "category": "Azret",
+      "title": "Azret",
+      "model": "model 3000",
+      "description": "BEst",
+      "color": "Black",
+      "price": 500,
+      "img1": "Azre",
+      "img2": "Azre",
+      "img3": "Azret",
+      "id": 5
     }
   ],
   "comments": [
@@ -86,6 +74,16 @@
       "name": "цываыва",
       "comment": "ыфв",
       "id": 5
+    },
+    {
+      "name": "Akmaldin",
+      "comment": "test",
+      "id": 6
+    },
+    {
+      "name": "Akmaldin",
+      "comment": "Bast ",
+      "id": 7
     }
   ]
 }

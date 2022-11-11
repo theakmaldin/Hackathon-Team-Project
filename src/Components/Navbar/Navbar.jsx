@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
@@ -118,6 +119,7 @@ const Navbar = () => {
             sx={{
               width: "60%",
               display: "flex",
+              alignItems: "center",
               justifyContent: "space-around",
               color: "black",
             }}>
@@ -135,13 +137,24 @@ const Navbar = () => {
             <div className="burger">
               <NavLink to="/add">ADD PRODUCT</NavLink>
               <NavLink to="list">COLLECTIONS</NavLink>
-              <NavLink to="/details">CUSTOMIZER</NavLink>
               <NavLink to="/comment">REVIEWS</NavLink>
             </div>
           </Box>
           <Search className="searchNavbar" sx={{ mr: "35px" }}>
             <LiveSearch />
           </Search>
+
+          <IconButton
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit">
+            <Link to="/basket">
+              <Badge badgeContent={basketCount} color="error">
+                <AddShoppingCartIcon />
+              </Badge>
+            </Link>
+          </IconButton>
+
           <Box
             className="boxAvatar"
             sx={{

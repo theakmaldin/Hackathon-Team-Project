@@ -29,15 +29,11 @@ const Filter = ({ category, setCategory, price, setPrice }) => {
         value={category}
         onChange={e => setCategory(e.target.value)}>
         <FormControlLabel value="Пиджак" control={<Radio />} label="Пиджак" />
+        <FormControlLabel value="Свитшот" control={<Radio />} label="Свитшот" />
         <FormControlLabel
-          value="Свитшоты"
+          value="Футболка"
           control={<Radio />}
-          label="Свитшоты"
-        />
-        <FormControlLabel
-          value="Футболки"
-          control={<Radio />}
-          label="Футболки"
+          label="Футболка"
         />
         <FormControlLabel value="Худи" control={<Radio />} label="Худи" />
         <FormControlLabel value="all" control={<Radio />} label="Все товары" />
